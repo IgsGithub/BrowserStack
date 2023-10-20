@@ -1,0 +1,7 @@
+#surefire_0
+#Mon Sep 25 11:43:50 IST 2023
+InstallBuild=appstore
+user.dir=/Users/igs_admin/.jenkins/Workspace/hipi_updated
+localRepository=/Users/igs_admin/.m2/repository
+userType=NonSubscribedUser
+basedir=/Users/igs_admin/.jenkins/Workspace/hipi_updated

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [MPWA]">
+  <parameter name="Validfacebookemail" value="krisarorec1047@gmail.com"/>
+  <parameter name="HashtageName" value="HimanshiKhurana"/>
+  <parameter name="FacebookUserID" value="igszeefive@gmail.com"/>
+  <parameter name="SubscribedPassword" value=""/>
+  <parameter name="release" value="2"/>
+  <parameter name="browserType" value="Safari"/>
+  <parameter name="RequiredBuild" value="no"/>
+  <parameter name="runModule" value="Suite"/>
+  <parameter name="SubscribedUserName" value=""/>
+  <parameter name="Validfacebookpassword" value="Krishna19@"/>
+  <parameter name="BuildVersion" value="Live"/>
+  <parameter name="FacebookPassword" value="123456@hipi"/>
+  <parameter name="NonsubscribedUserName" value="ios2@mailnesia.com"/>
+  <parameter name="searchcontent1" value="Sanchari Hrudaya - Chambal"/>
+  <parameter name="NonsubscribedPasswordNumber" value="hipi@1992"/>
+  <parameter name="UserName" value="himanshi khurana"/>
+  <parameter name="NonsubscribedPassword" value="123456"/>
+  <parameter name="url" value="https://hipi.co.in"/>
+  <parameter name="runMode" value="Suites"/>
+  <parameter name="FacebookUserName" value="mahesh.r@igsindia.net"/>
+  <parameter name="InstallBuild" value="no"/>
+  <parameter name="PhoneNumber" value="9533546451"/>
+  <parameter name="FacebookUserPassword" value="zeefive@igs"/>
+  <parameter name="userType" value="NonSubscribedUser"/>
+  <parameter name="NonsubscribedUserNameNumber" value="9964356027"/>
+  <listeners>
+    <listener class-name="com.extent.ExtentReporter"/>
+  </listeners>
+  <test name="iOSHipiNeo">
+    <classes>
+      <class name="com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_mPWA"/>
+    </classes>
+  </test> <!-- iOSHipiNeo -->
+  <test name="iOSHipiNeo(failed)">
+    <classes>
+      <class name="com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_mPWA">
+        <methods>
+          <include name="FeedScreenArrivalTime" invocation-numbers="0"/>
+          <include name="tearDownApp"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_mPWA -->
+    </classes>
+  </test> <!-- iOSHipiNeo(failed) -->
+</suite> <!-- Failed suite [MPWA] -->
