@@ -404,9 +404,13 @@ public class Drivertools {
 			setENV("Native App");
 			click = false;
 		}
+		else if (getPlatform().equals("BrowserStack_MPWA")) {
+			setENV("Chrome Application");
+			click = false;
+		}
 		
 		logger.info("PlatForm :: " + getPlatform());
-		if (Stream.of("Android", "ios", "Web", "MPWA", "TV", "HIPI","HIPI_iOS","iOSWeb", "BrowserStack").anyMatch(getPlatform()::equals)) {
+		if (Stream.of("Android", "ios", "Web", "MPWA", "TV", "HIPI","HIPI_iOS","iOSWeb", "BrowserStack", "BrowserStack_MPWA").anyMatch(getPlatform()::equals)) {
 			setHandler(new PropertyFileReader("properties/ExecutionControl.properties"));
 			if (getHandler().getproperty(getTestName()).equals("Y") && (getRunMode().contentEquals(getTestName()))
 					|| (getRunMode().contentEquals("Suites"))) {

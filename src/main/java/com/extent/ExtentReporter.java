@@ -111,7 +111,7 @@ public class ExtentReporter implements ITestListener  {
 		} else if (getPlatformFromtools().equals("HIPI") ) {
 			src = ((TakesScreenshot) getDriver()).getScreenshotAs(org.openqa.selenium.OutputType.FILE);
 		}
-		else if (getPlatformFromtools().equals("HIPI_iOS") || getPlatform().equals("BrowserStack") ) {
+		else if (getPlatformFromtools().equals("HIPI_iOS") || getPlatform().equals("BrowserStack") || getPlatform().equals("BrowserStack_MPWA") ) {
 			src = ((TakesScreenshot) getDriver()).getScreenshotAs(org.openqa.selenium.OutputType.FILE);
 		}
 		
@@ -283,7 +283,7 @@ public class ExtentReporter implements ITestListener  {
 		} else if (getPlatformFromtools().equals("HIPI_iOS") |getPlatformFromtools().equals("MPWA")) {
 			extent.get().setSystemInfo("Device Name : ", iosModel);
 			extent.get().setSystemInfo("OS Version : ", iosVersion);
-		}else if (getPlatformFromtools().equals("Web")) {
+		}else if (getPlatformFromtools().equals("Web") || getPlatformFromtools().equals("BrowserStack_MPWA")) {
 			extent.get().setSystemInfo("Browser Name ", BrowserType);
 //			extent.get().setSystemInfo("Browser Version ", BrowserType);
 		}

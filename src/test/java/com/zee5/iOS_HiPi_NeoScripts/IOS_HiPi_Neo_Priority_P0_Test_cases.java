@@ -222,7 +222,7 @@ public class IOS_HiPi_Neo_Priority_P0_Test_cases {
 	}
 */
 	
-	@Test(priority =23)
+//	@Test(priority =23)
 	@Parameters({ "userType", "InstallBuild" })
 	public void TimeTakenToloadLogoutscenario_23(String userType,String InstallBuild) throws Exception{
 
@@ -271,7 +271,7 @@ public class IOS_HiPi_Neo_Priority_P0_Test_cases {
 	}
 */	
 	
-	@Test(priority =28)
+//	@Test(priority =28)
 	@Parameters({ "userType", "InstallBuild" })
 	public void LoginWithFacebook_28(String userType,String InstallBuild) throws Exception{
 

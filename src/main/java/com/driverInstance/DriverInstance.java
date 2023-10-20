@@ -89,7 +89,10 @@ public class DriverInstance extends Drivertools {
 			case "BrowserStack":
 				tlDriver.set((AppiumDriver<WebElement>) new IOSDriver<WebElement>(new URL(getBSremoteUrl()),this.generateCapabilitiesbrowserStack(Application)));
 			break;
-				
+			
+			case "BrowserStack_MPWA":
+				tlDriver.set((AppiumDriver<WebElement>) new IOSDriver<WebElement>(new URL(getBSremoteUrl()),this.generateCapabilitiesbrowserStackMPWA(Application)));
+			break;
 				
 			default:
 				throw new SkipException("Incorrect Platform...");
@@ -134,6 +137,18 @@ public class DriverInstance extends Drivertools {
 		capabilities.setCapability("browserstack.user", getBSuserID());
 		capabilities.setCapability("browserstack.key", getBSuserKey());
 		capabilities.setCapability(MobileCapabilityType.APP, getBSappID());
+		capabilities.setCapability("autoGrantPermissions", "true");
+		return capabilities;
+	}
+	
+	public DesiredCapabilities generateCapabilitiesbrowserStackMPWA(String application) {
+		System.out.println("Capability-BrowserStack");
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 13 Pro Max");
+		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 300);
+		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
+		capabilities.setCapability("browserstack.user", getBSuserID());
+		capabilities.setCapability("browserstack.key", getBSuserKey());
+		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Safari");
 		capabilities.setCapability("autoGrantPermissions", "true");
 		return capabilities;
 	}

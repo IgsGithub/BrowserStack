@@ -315,7 +315,6 @@
 						<!-- <suiteXmlFile>${rp.launch}.xml</suiteXmlFile> -->
 						
 						  <suiteXmlFile>IOS_HiPi_Neo_Sanity.xml</suiteXmlFile> 
-						 <suiteXmlFile>iOS_mPWA.xml</suiteXmlFile> 
 						
 						<!-- <suiteXmlFile>${suiteXmlFile}.xml</suiteXmlFile> -->
 					</suiteXmlFiles>

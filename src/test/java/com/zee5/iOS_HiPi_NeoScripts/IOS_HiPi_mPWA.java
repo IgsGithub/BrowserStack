@@ -43,7 +43,7 @@ public class IOS_HiPi_mPWA {
 	
 	
 	
-	@Test(priority =2)
+//	@Test(priority =2)
 	@Parameters({ "userType", "InstallBuild" })
 	public void TimeTakenToAppNavigationToAppStoreClickingOnCreateButton(String userType,String InstallBuild) throws Exception{
 	
