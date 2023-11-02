@@ -135,7 +135,20 @@ public class Zee5mWebiOSHipiNeoSanityBusinessLogic extends Utilities {
 		// getTimeout() + " RetryCount :" + getRetryCount());
 	}
 	public void closeSafariTabs() throws InterruptedException{
-
+		
+		IOSDriver driver = (IOSDriver)getDriver();
+		System.out.println("Debug");
+//	    Map<String, Object> params = new HashMap();
+//
+// 
+//
+//	    params.put("url", "https://hipi.co.in");
+//
+// 
+//
+//	        params.put("package", "com.apple.mobilesafari");
+//	        driver.executeScript("mobile:deepLink", new Object[]{params});
+	        
 		WebElement browserTab = getDriver().findElementByXPath("//*[@label='Tabs']");
 		//XCUIElementTypeButton[contains(@label,'New Tab')]
 
@@ -159,6 +172,7 @@ public class Zee5mWebiOSHipiNeoSanityBusinessLogic extends Utilities {
 			getDriver().manage().deleteAllCookies();
 		}catch(Exception e){};
 		Thread.sleep(8000);
+		
 
 
 	}
@@ -181,7 +195,24 @@ public class Zee5mWebiOSHipiNeoSanityBusinessLogic extends Utilities {
 		//		waitTime(10000);
 		//		new Zee5mWebiOSHipiNeoSanityBusinessLogic("safari");
 		//		waitTime(4000);
+		IOSDriver driver = (IOSDriver)getDriver();
+		System.out.println("Debug");
+	    Map<String, Object> params = new HashMap();
 
+ 
+
+	    params.put("safariInitialUrl", "https://hipi.co.in");
+
+ 
+
+	    params.put("bundleId", "com.apple.mobilesafari");
+	    driver.executeScript("mobile:launchApp", new Object[]{params});
+	    
+	    TimeStampclick(IOSHipiMwebHomePage.objiosTabOverViewBtn, "Tab overview");
+	    waitTime(3000);
+	    TimeStampclick(IOSHipiMwebHomePage.objiosAddTabBtn, "Tab overview");
+	    waitTime(3000);
+	    
 		TimeStampclick(IOSHipiMwebHomePage.objiosmwebSearchAddress, "searchtab in safari");
 		waitTime(3000);
 		TimeStamptype(IOSHipiMwebHomePage.objiosmwebSearchTabInSafari, url, url+"Typing url");

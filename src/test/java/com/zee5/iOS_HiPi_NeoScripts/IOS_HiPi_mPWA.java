@@ -23,10 +23,10 @@ public class IOS_HiPi_mPWA {
 	@Test(priority=0)
 	@Parameters({"userType","InstallBuild"})
 	public void getUrl(String userType,String InstallBuild) throws Exception {
-		Zee5mWebHipiNeoBusinessLogic.closeSafariTabs();
+//		Zee5mWebHipiNeoBusinessLogic.closeSafariTabs();
 		Zee5mWebHipiNeoBusinessLogic.getURl();
 		Zee5mWebHipiNeoBusinessLogic.SwipeUpAnimation();
-		Zee5mWebHipiNeoBusinessLogic.getURl();
+//		Zee5mWebHipiNeoBusinessLogic.getURl();
 	//	Zee5mWebHipiNeoBusinessLogic.TimeStampLoginAndNivigateToHipi(userType);
 	//	Zee5mWebHipiNeoBusinessLogic.TimeStampNewLoginAndNivigateToHipi(userType);
 		}

@@ -289,12 +289,70 @@ public class IOS_HiPi_Neo_Priority_P0_Test_cases {
 		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("shraddha kapoor", "STC002");
 		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("punjabi singers", "STC003");
 		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("bollywood actress", "STC004");
-		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("xxx", "STC005");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("rap", "STC005");
 		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("punjabi", "STC006");
 		Zee5ApplicasterHipiNeoBusinessLogic.searchResults("memories", "STC007");
 	}
+	
+	@Test(priority=31)
+	@Parameters({"userType","InstallBuild"})
+	public void getUrl(String userType,String InstallBuild) throws Exception {
+		
+		Zee5ApplicasterHipiNeoBusinessLogic.getUrl();
+		Zee5ApplicasterHipiNeoBusinessLogic.SwipeUpAnimation();
 
- 
+
+
+
+
+		
+	}
+	
+	@Test(priority=32)
+	@Parameters({"userType","InstallBuild"})
+	public void TimeTakenToAppNavigationToAppStoreClickingOnCreateButton(String userType,String InstallBuild) throws Exception{
+		
+		Zee5ApplicasterHipiNeoBusinessLogic.NavigationToAppStoreFromCreateButton(userType, "MPWA_TC004");
+	}
+	
+	
+	@Test(priority =33)
+	@Parameters({ "userType", "InstallBuild" })
+	public void MPWATimeTakenToloadDiscoverPage(String userType,String InstallBuild) throws Exception{
+	
+		Zee5ApplicasterHipiNeoBusinessLogic.discover_Screen_LoadTime_MPWA(userType,"MPWA_TC005");
+	}
+	
+	
+	@Test(priority = 34)
+	@Parameters({ "userType", "InstallBuild" })
+	public void TimeTakenToloadSearshResultInDiscoverPage(String userType,String InstallBuild) throws Exception{
+	
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultScreen_MPWA(userType, "MPWA_TC006");
+	}
+	
+	
+	@Test(priority =35)
+	@Parameters({ "userType", "InstallBuild" })
+	public void TimeTakenToloadAutoSuSearshResultInDiscoverPage(String userType,String InstallBuild) throws Exception{
+	
+		Zee5ApplicasterHipiNeoBusinessLogic.searchAutoSuggestionsResultScreen_MPWA(userType, "MPWA_TC007");
+	}
+	
+	
+	@Test(priority = 36)
+	@Parameters({ "userType", "InstallBuild" })
+	public void searchSuggestions(String userType, String InstallBuild) throws Exception{
+		
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultsMPWA("punjabi singers", "MPWA_TC008");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultsMPWA("bollywood actress", "MPWA_TC009");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultsMPWA("punjabi", "MPWA_TC010");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultsMPWA("love", "MPWA_TC011");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultsMPWA("shivangi", "MPWA_TC012");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultsMPWA("shraddha aryaa", "MPWA_TC013");
+		Zee5ApplicasterHipiNeoBusinessLogic.searchResultsMPWA("rap", "MPWA_TC014");
+	}
+	
  
 	/*
     	 @Test(priority=25)

@@ -28,7 +28,7 @@ public class DeviceDetails {
 
 	public static String getAppDetails(String str) {
 		try {
-			getListOfDevicesConnected();
+		//	getListOfDevicesConnected();
 			String cmd = "";
 			if (AppDetails.isEmpty()) {
 				cmd = "adb -s " + devices.get(0) + " shell \"dumpsys package " + str + " | grep versionName\"";
@@ -64,7 +64,7 @@ public class DeviceDetails {
 		return "";
 	}
 
-	public static void getTheDeviceManufacturer() {
+/*	public static void getTheDeviceManufacturer() {
 		devices.removeAll(devices);
 		deviceManufacturer.removeAll(deviceManufacturer);
 		getListOfDevicesConnected();
@@ -80,7 +80,7 @@ public class DeviceDetails {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 	public static String Device_OS_Version() {
 		try {
@@ -105,7 +105,7 @@ public class DeviceDetails {
 		}
 	}
 
-	public static ArrayList<String> getListOfDevicesConnected() {
+/*	public static ArrayList<String> getListOfDevicesConnected() {
 		try {
 			String cmd2 = "adb devices";
 			Process p1 = Runtime.getRuntime().exec(cmd2);
@@ -124,7 +124,7 @@ public class DeviceDetails {
 			e.printStackTrace();
 		}
 		return devices;
-	}
+	}*/
 
 	public static String deviceNames(String extent) {
 		ArrayList<String> a = new ArrayList<String>();
@@ -138,7 +138,7 @@ public class DeviceDetails {
 		return a.get(0);
 	}
 
-	public static void getTheDeviceOSVersion() {
+/*	public static void getTheDeviceOSVersion() {
 
 		devices.removeAll(devices);
 		deviceOS.removeAll(deviceOS);
@@ -156,7 +156,7 @@ public class DeviceDetails {
 			e.printStackTrace();
 		}
 
-	}
+	}*/
 
 	public static String DeviceInfo(String testName) {
 

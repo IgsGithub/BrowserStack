@@ -138,6 +138,8 @@ public class DriverInstance extends Drivertools {
 		capabilities.setCapability("browserstack.key", getBSuserKey());
 		capabilities.setCapability(MobileCapabilityType.APP, getBSappID());
 		capabilities.setCapability("autoGrantPermissions", "true");
+		capabilities.setCapability("autoAcceptAlerts", "true");
+		capabilities.setCapability("safariInitialUrl", "https://hipi.co.in");
 		return capabilities;
 	}
 	
@@ -148,8 +150,9 @@ public class DriverInstance extends Drivertools {
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
 		capabilities.setCapability("browserstack.user", getBSuserID());
 		capabilities.setCapability("browserstack.key", getBSuserKey());
-		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Safari");
+		capabilities.setCapability(MobileCapabilityType.APP, getBSappID());
 		capabilities.setCapability("autoGrantPermissions", "true");
+		capabilities.setCapability("safariInitialUrl", "https://hipi.co.in");
 		return capabilities;
 	}
 	

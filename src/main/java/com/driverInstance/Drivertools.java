@@ -328,7 +328,7 @@ public class Drivertools {
 		setappTimeOut(Integer.parseInt(getHandler().getproperty("APP_TIMEOUT")));
 		//setremoteUrl("http://" + getHost() + ":" + getPort() + "/wd/hub");
 		setremoteUrl("http://localhost:4723/wd/hub");
-		if(platform.equalsIgnoreCase("BrowserStack") || platform.equalsIgnoreCase("IOSBrowserStack")) {
+		if(platform.equalsIgnoreCase("BrowserStack") || platform.equalsIgnoreCase("IOSBrowserStack") || platform.equalsIgnoreCase("BrowserStack_MPWA")) {
 			setBSuserID(getHandler().getproperty("userID"));
 			setBSuserKey(getHandler().getproperty("accessKey"));
 			setBSremoteUrl("http://" + getHost() + "/wd/hub");
@@ -405,7 +405,7 @@ public class Drivertools {
 			click = false;
 		}
 		else if (getPlatform().equals("BrowserStack_MPWA")) {
-			setENV("Chrome Application");
+			setENV("Native App");
 			click = false;
 		}
 		

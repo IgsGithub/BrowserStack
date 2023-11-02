@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class IOSHipiMwebDiscoverPage {
 	
 	//Search Button In Keyboard
-			public static By objiosmwebSearchButtonInKeyboard=By.xpath("//*[@class='UIAKeyboard']//child::*[contains(@id,'go')]|//XCUIElementTypeButton[contains(@label,'go')] | //XCUIElementTypeButton[@name='Return'] ");//| //XCUIElementTypeButton[@name='Done']
+			public static By objiosmwebSearchButtonInKeyboard=By.xpath("//*[@class='UIAKeyboard']//child::*[contains(@id,'go')]|//XCUIElementTypeButton[contains(@label,'go')] | //XCUIElementTypeButton[@name='Return'] | //XCUIElementTypeButton[@name='Go'] ");//| //XCUIElementTypeButton[@name='Done']
 
 	
 	//Search Field In Discover Page
@@ -78,6 +78,7 @@ public class IOSHipiMwebDiscoverPage {
 			public static By objmwebMailCloseButtonInFeedScreen=By.xpath("//XCUIElementTypeButton[@name='Close']");
 			
 			
-
+			//Done button in keyboard
+			public static By objiosDoneInKeyboard = By.xpath("//XCUIElementTypeButton[@name='Done']");
 
 }

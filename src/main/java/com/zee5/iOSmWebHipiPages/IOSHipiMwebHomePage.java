@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class IOSHipiMwebHomePage {
 	
 	//XCUIElementTypeOther[@name='Address'] | //XCUIElementTypeButton[@name='URL']|
-	public static By objiosmwebSearchAddress=By.xpath("//XCUIElementTypeTextField[@name='URL']| //XCUIElementTypeTextField[@name='TabBarItemTitle']");
+	public static By objiosmwebSearchAddress=By.xpath("//XCUIElementTypeTextField[@name='URL'] | //XCUIElementTypeTextField[@name='TabBarItemTitle']");
 	
 	
 
@@ -86,12 +86,23 @@ public class IOSHipiMwebHomePage {
 			public static By objiosOpenCTA = By.xpath("//XCUIElementTypeStaticText[@name='Open']");
 			
 			//Home button in below Tab Bar
-			public static By objiOSmwebHomeBtnInBelowTabBar=By.xpath("//*[contains(@value,'Home') and contains(@class,'utton')] | //*[contains(@name,'Feed-')] |//XCUIElementTypeButton[contains(@label,'Home')]| //*[contains(@name,'Home')] ");
+			public static By objiOSmwebHomeBtnInBelowTabBar=By.xpath("//*[contains(@value,'Home') and contains(@class,'utton')] | //*[contains(@name,'Feed-')] |//XCUIElementTypeButton[contains(@label,'Home')]| //*[contains(@name,'Home')] | //XCUIElementTypeStaticText[@name='Home'] ");
 
 
 			//Download button in below Tab Bar
 			public static By objiOSmwebDownloadBtnInAppStore=By.xpath("//XCUIElementTypeButton[@name='re-download']|//XCUIElementTypeButton[@name='UIA.AppStore.OfferButton']");
 					
 			
+			//tab overview button
+			public static By objiosTabOverViewBtn = By.xpath("//XCUIElementTypeButton[@name='TabOverviewButton'] | //XCUIElementTypeButton[@name='TabOverviewButton']");
+			
+			//Add tab button
+			public static By objiosAddTabBtn = By.xpath("//XCUIElementTypeButton[@name='AddTabButton']");
+			
+			//Close google popup
+			public static By objiosClosePublicPopup = By.xpath("//XCUIElementTypeButton[@name='Close']");
+			
+			//Decline Cookies
+			public static By objiosDeclineCookies = By.xpath("//XCUIElementTypeStaticText[@name='Decline all cookies']");
 
 }

@@ -1,0 +1,468 @@
+<html>
+<head>
+<title>TestNG:  iOSHipiNeo</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>iOSHipiNeo</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 02 11:58:46 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>5316 seconds (5316736 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.tearDownApp()'><b>tearDownApp</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases</td>
+<td><div><pre>java.lang.IllegalAccessError: class com.spire.xls.packages.sprqxh (in unnamed module @0x3a82f6ef) cannot access class sun.security.action.GetPropertyAction (in module java.base) because module java.base does not export sun.security.action to unnamed module @0x3a82f6ef
+	at com.spire.xls.packages.sprqxh.spr┿┡(Unknown Source)
+	at com.spire.xls.packages.sprqxh.spr‱┍(Unknown Source)
+	at com.spire.xls.packages.sprqxh.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.packages.spriag.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.packages.sprqeg.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.core.spreadsheet.XlsWorkbook.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.Workbook.&lt;init&gt;(Unknown Source)
+	at com.excel.Time_ExcelUpdate.AutoFitColumn(Time_ExcelUpdate.java:471)
+	at com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.tearDownApp(IOS_HiPi_Neo_Priority_P0_Test_cases.java:33)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace493693792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace493693792'><pre>java.lang.IllegalAccessError: class com.spire.xls.packages.sprqxh (in unnamed module @0x3a82f6ef) cannot access class sun.security.action.GetPropertyAction (in module java.base) because module java.base does not export sun.security.action to unnamed module @0x3a82f6ef
+	at com.spire.xls.packages.sprqxh.spr┿┡(Unknown Source)
+	at com.spire.xls.packages.sprqxh.spr‱┍(Unknown Source)
+	at com.spire.xls.packages.sprqxh.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.packages.spriag.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.packages.sprqeg.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.core.spreadsheet.XlsWorkbook.&lt;init&gt;(Unknown Source)
+	at com.spire.xls.Workbook.&lt;init&gt;(Unknown Source)
+	at com.excel.Time_ExcelUpdate.AutoFitColumn(Time_ExcelUpdate.java:471)
+	at com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.tearDownApp(IOS_HiPi_Neo_Priority_P0_Test_cases.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadAutoSuSearshResultInDiscoverPage()'><b>TimeTakenToloadAutoSuSearshResultInDiscoverPage</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IGSs-MacBook-Air-3.local&apos;, ip: &apos;fe80:0:0:0:474:e5de:3f7e:5b86%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: 945772f1202eb5a7a0bc8c986e987cbef3d86f12
+*** Element info: {Using=xpath, value=(//*[@type=&apos;XCUIElementTypeSearchField&apos; and @value=&apos;Search&apos;]//child::*)[2] | //XCUIElementTypeButton[@name=&apos;ic search&apos;] | //*[@type=&apos;XCUIElementTypeSearchField&apos; ]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.business.zee.Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.searchAutoSuggestionsResultScreen_MPWA(Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.java:41911)
+	at com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadAutoSuSearshResultInDiscoverPage(IOS_HiPi_Neo_Priority_P0_Test_cases.java:339)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1125292271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1125292271'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IGSs-MacBook-Air-3.local&apos;, ip: &apos;fe80:0:0:0:474:e5de:3f7e:5b86%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: 945772f1202eb5a7a0bc8c986e987cbef3d86f12
+*** Element info: {Using=xpath, value=(//*[@type=&apos;XCUIElementTypeSearchField&apos; and @value=&apos;Search&apos;]//child::*)[2] | //XCUIElementTypeButton[@name=&apos;ic search&apos;] | //*[@type=&apos;XCUIElementTypeSearchField&apos; ]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.business.zee.Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.searchAutoSuggestionsResultScreen_MPWA(Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.java:41911)
+	at com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadAutoSuSearshResultInDiscoverPage(IOS_HiPi_Neo_Priority_P0_Test_cases.java:339)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>27</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadSearshResultInDiscoverPage()'><b>TimeTakenToloadSearshResultInDiscoverPage</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IGSs-MacBook-Air-3.local&apos;, ip: &apos;fe80:0:0:0:474:e5de:3f7e:5b86%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: 945772f1202eb5a7a0bc8c986e987cbef3d86f12
+*** Element info: {Using=xpath, value=(//*[@type=&apos;XCUIElementTypeSearchField&apos; and @value=&apos;Search&apos;]//child::*)[2] | //XCUIElementTypeButton[@name=&apos;ic search&apos;] | //*[@type=&apos;XCUIElementTypeSearchField&apos; ]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.business.zee.Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.searchResultScreen_MPWA(Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.java:41852)
+	at com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadSearshResultInDiscoverPage(IOS_HiPi_Neo_Priority_P0_Test_cases.java:331)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1788136670", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1788136670'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IGSs-MacBook-Air-3.local&apos;, ip: &apos;fe80:0:0:0:474:e5de:3f7e:5b86%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, capabilities: {64bit: false, acceptSslCert: false, acceptSslCerts: false, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: XCUITest, biometricUserOptionAccessible: false, bootstrapPath: /usr/local/.browserstack/co..., browserName: , browserstack.appium_version: 1.21.0, browserstack.isTargetBased: false, browserstack.is_hub_canary: false, browserstack.minOSVersion: 15.0, bundleID: com.zee5.hipi, bundleId: com.zee5.hipi, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}, custom_replay_kit_params: {&quot;rotation&quot;:&quot;false&quot;,&quot;captur..., databaseEnabled: false, detected_language: selenium/3.141.59 (java mac), device: iphone, deviceName: iPhone 13 Pro Max, deviceOrientation: PORTRAIT, javascriptEnabled: true, locationContextEnabled: false, mobile: {browser: mobile, version: iPhone 13 Pro Max-15.4}, networkConnectionEnabled: false, newCommandTimeout: 0, new_bucketing: true, noReset: true, orientation: PORTRAIT, orig_os: ios, platform: MAC, platformName: iOS, realMobile: true, safariIgnoreFraudWarning: true, safariInitialUrl: https://hipi.co.in, sessionId: 945772f1202eb5a7a0bc8c986e9..., takesScreenshot: true, udid: 00008110-0014792E0291801E, uiautomator2ServerLaunchTimeout: 60000, useXctestrunFile: true, version: , waitForQuiescence: false, wdaStartupRetries: 3, wda_port: 8400, webStorageEnabled: false, webkitResponseTimeout: 20000}
+Session ID: 945772f1202eb5a7a0bc8c986e987cbef3d86f12
+*** Element info: {Using=xpath, value=(//*[@type=&apos;XCUIElementTypeSearchField&apos; and @value=&apos;Search&apos;]//child::*)[2] | //XCUIElementTypeButton[@name=&apos;ic search&apos;] | //*[@type=&apos;XCUIElementTypeSearchField&apos; ]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.business.zee.Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.searchResultScreen_MPWA(Zee5ApplicasteriOSHipiNeoSanityBusinessLogic.java:41852)
+	at com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadSearshResultInDiscoverPage(IOS_HiPi_Neo_Priority_P0_Test_cases.java:331)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>19</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.FeedScreenArrivalTime_1()'><b>FeedScreenArrivalTime_1</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>223</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.MPWATimeTakenToloadDiscoverPage()'><b>MPWATimeTakenToloadDiscoverPage</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>70</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToAppNavigationToAppStoreClickingOnCreateButton()'><b>TimeTakenToAppNavigationToAppStoreClickingOnCreateButton</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>51</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToPostAcreatedVideo15s_4()'><b>TimeTakenToPostAcreatedVideo15s_4</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>103</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToPostAcreatedVideo30_5()'><b>TimeTakenToPostAcreatedVideo30_5</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>131</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToPostAcreatedVideo45_6()'><b>TimeTakenToPostAcreatedVideo45_6</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>114</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToPostAcreatedVideo60_7()'><b>TimeTakenToPostAcreatedVideo60_7</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>213</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToPostAcreatedVideo90_8()'><b>TimeTakenToPostAcreatedVideo90_8</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>177</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToStartVideoAfterSwipe_9()'><b>TimeTakenToStartVideoAfterSwipe_9</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>20</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadAutoSuSearshResultInDiscoverPage_12()'><b>TimeTakenToloadAutoSuSearshResultInDiscoverPage_12</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>24</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadBannerClickedLandingScreenInDiscoverPage_14()'><b>TimeTakenToloadBannerClickedLandingScreenInDiscoverPage_14</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>31</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadCarousalBannersInDiscoverPage_13()'><b>TimeTakenToloadCarousalBannersInDiscoverPage_13</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>45</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadDiscoverPage_10()'><b>TimeTakenToloadDiscoverPage_10</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>8</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadEffects_screen_18()'><b>TimeTakenToloadEffects_screen_18</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>28</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadFilter_screen_19()'><b>TimeTakenToloadFilter_screen_19</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>67</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadHashtagRailsPage_16()'><b>TimeTakenToloadHashtagRailsPage_16</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>55</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadPostScreenFromNextCTA_screen_20()'><b>TimeTakenToloadPostScreenFromNextCTA_screen_20</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>67</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadRailsPage_15()'><b>TimeTakenToloadRailsPage_15</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>69</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadSearshResultInDiscoverPage_11()'><b>TimeTakenToloadSearshResultInDiscoverPage_11</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>31</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.TimeTakenToloadSoundscreen_17()'><b>TimeTakenToloadSoundscreen_17</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>35</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.getUrl()'><b>getUrl</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>42</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.searchSuggestions()'><b>searchSuggestions</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>1731</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+<tr>
+<td title='com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases.searchSuggestions_29()'><b>searchSuggestions_29</b><br>Test class: com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases<br>Parameters: NonSubscribedUser, no</td>
+<td></td>
+<td>1249</td>
+<td>com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases@366ef90e</td></tr>
+</table><p>
+</body>
+</html>

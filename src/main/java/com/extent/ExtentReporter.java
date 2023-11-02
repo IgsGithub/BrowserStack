@@ -145,8 +145,8 @@ public class ExtentReporter implements ITestListener  {
 	//	ExcelUpdate.UserType = context.getCurrentXmlTest().getParameter("userType");
 		
 		if (!getPlatform().equals("Web")&&(!getPlatform().equals("HIPI_iOS")&&(!getPlatform().equals("MPWA")))) {
-			DeviceDetails.getTheDeviceManufacturer();
-			DeviceDetails.getTheDeviceOSVersion();
+		//	DeviceDetails.getTheDeviceManufacturer();
+		//	DeviceDetails.getTheDeviceOSVersion();
 		}
 	}
 
@@ -234,9 +234,9 @@ public class ExtentReporter implements ITestListener  {
 		
 	}
 	// mail extent reports
-		/*	String[] to = { "prashantkumar.vairat@zee.com" };//prashantkumar.vairat@zee.com
-			String[] cc = {"shakir.muchumarri@igsindia.net", "anurag.gupta@zee.com", "jwala.agrawal@zee.com", "bindu.vm@igsindia.net", "tejas.cb@igsindia.net", "sharath.singh@igsindia.net"};
-			String[] bcc = {};   */
+			String[] to = { "prashantkumar.vairat@zee.com" };//prashantkumar.vairat@zee.com
+			String[] cc = {"shakir.muchumarri@igsindia.net", "jwala.agrawal@zee.com", "bindu.vm@igsindia.net", "tejas.cb@igsindia.net", "sharath.singh@igsindia.net"};
+			String[] bcc = {};   
 
 	@SuppressWarnings("static-access")
 	public void extentLoggerFail(String stepName, String details) {
@@ -261,9 +261,9 @@ public class ExtentReporter implements ITestListener  {
 		
 		
 		
-	/*	mail.sendMail("jenkinshipi@gmail.com", "bapnwdzfkojhjbbr", "smtp.gmail.com", "587", "true", "true", true, "javax.net.ssl.SSLSocketFactory",
+		mail.sendMail("jenkinshipi@gmail.com", "bapnwdzfkojhjbbr", "smtp.gmail.com", "587", "true", "true", true, "javax.net.ssl.SSLSocketFactory",
 				"false", to, cc, bcc, "Hipi iOS Automation Fail Alert",
-				"TestCAse ID",TCid+" "+summarry );  */
+				"TestCAse ID",TCid+" "+summarry ); 
 		//SearchScenarios_ExcelUpdate.writeData1(details, "Fail", ""); 
 		
 		
@@ -283,7 +283,7 @@ public class ExtentReporter implements ITestListener  {
 		} else if (getPlatformFromtools().equals("HIPI_iOS") |getPlatformFromtools().equals("MPWA")) {
 			extent.get().setSystemInfo("Device Name : ", iosModel);
 			extent.get().setSystemInfo("OS Version : ", iosVersion);
-		}else if (getPlatformFromtools().equals("Web") || getPlatformFromtools().equals("BrowserStack_MPWA")) {
+		}else if (getPlatformFromtools().equals("Web")) {
 			extent.get().setSystemInfo("Browser Name ", BrowserType);
 //			extent.get().setSystemInfo("Browser Version ", BrowserType);
 		}

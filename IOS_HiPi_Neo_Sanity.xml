@@ -13,7 +13,7 @@
 	
 	
 
-	<!-- <parameter name="url" value="http://newpwa.zee5.com/"/> -->
+	<parameter name="url" value="https://hipi.co.in"/>
 	
 	
 	<parameter name="userType" value="NonSubscribedUser"/> <!-- Guest/NonSubscribedUser/${userType} -->
@@ -66,8 +66,7 @@
 	<test name="iOSHipiNeo"> <!-- 1049 total tcs|methods -->
 		<classes>      
 			
-			 <class name="com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases"/>
-			
+			 <class name="com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_Neo_Priority_P0_Test_cases" />
 		</classes>
 	</test>
 

@@ -66,8 +66,11 @@
 	<test name="iOSHipiNeo"> <!-- 1049 total tcs|methods -->
 		<classes>      
 			
-			 <class name="com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_mPWA" />
-			
+			 <class name="com.zee5.iOS_HiPi_NeoScripts.IOS_HiPi_mPWA" >
+			<methods>
+				<include name="getUrl"></include>
+			</methods>	
+			 </class>
 		</classes>
 	</test>
 
